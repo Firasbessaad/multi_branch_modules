@@ -19,7 +19,7 @@
         <field name="priority" eval="70"/>
         <field name="inherit_id" ref="account.view_account_supplier_payment_tree"/>
         <field name="arch" type="xml">
-            <field name="company_id" position="after">
+            <field name="state" position="after">
                 <field name="branch_id" groups="multi_branches.group_multi_branch" required="1" optional="show"/>
             </field>
         </field>
@@ -42,7 +42,7 @@
         <field name="priority" eval="70"/>
         <field name="inherit_id" ref="account.view_account_payment_tree"/>
         <field name="arch" type="xml">
-            <field name="company_id" position="after">
+            <field name="state" position="after">
                 <field name="branch_id" groups="multi_branches.group_multi_branch" required="1" optional="show"/>
             </field>
         </field>
