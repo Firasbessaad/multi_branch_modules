@@ -2,19 +2,17 @@
 <odoo>
   <data>
     <record id="action_add_new_parent_widget" model="ir.actions.client">
-      <field name="name">Employee Dashboard</field>
+      <field name="name">Add new Parent</field>
       <field name="tag">add_new_parent_widget.action</field>
       <field name="target">main</field>
     </record>
 
-    <menuitem name="Dashboard"
+    <menuitem name="Add new parent"
         id="menu_add_new_parent_widget_menu_root"
         action="action_add_new_parent_widget"
-        sequence="90" groups="base.group_user"></menuitem>
-
-    <menuitem name="Employee Dashboard"
-        id="menu_add_new_parent_widget"
-        parent="menu_add_new_parent_widget_menu_root"
-        sequence="10" groups="base.group_user"></menuitem>
+        sequence="90" groups="base.group_user"
+        web_icon="aicsk,static/description/icon.png"
+        >
+      </menuitem>
   </data>
 </odoo>
