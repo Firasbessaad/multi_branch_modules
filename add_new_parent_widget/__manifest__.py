@@ -17,17 +17,18 @@
         'web'
     ],
     'data': [
-        'views/web_asset_backend_template.xml',
         'views/add_new_parent_widget_view.xml'
     ],
     'assets': {
-        'web.assets_backend' [
+        'web.assets_backend':[
             'add_new_parent_widget/static/src/js/add_new_parent_widget.js',
-        ],},
+            'add_new_parent_widget/static/src/css/add_new_parent_widget.css',
+        ],
+        'web.assets_qweb': [
+            'add_new_parent_widget/static/src/xml/add_new_parent_widget.xml',
+        ],
+    },
     'demo': [],
-    'qweb': [
-        'static/src/xml/add_new_parent_widget.xml'
-    ],
     'images': [
         'static/description/icon.png'
     ],

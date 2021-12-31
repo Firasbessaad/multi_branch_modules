@@ -1,4 +1,20 @@
 .add-new-parent {
-    color: #19A8A2;
+    color: #304c64 !important;
     font-weight: bold;
+    background-image: url('/add_new_parent_widget/static/src/img/welcome_back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-size: contain;
+    font-size:25px;
+}
+.input-group > .form-control, .input-group > .input-group-prepend > .input-group-text{
+    font-size:25px;
+    color: #304c64 !important;
+
+}
+.welcome_msg{
+    font-size:50px;
+    color: #304c64 !important;
+
 }

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <template id="assets_backend" inherit_id="web.assets_backend" name="Add new parent assets backend">
-        <xpath expr="." position="inside">
-            <link rel="stylesheet" type="text/css" href="/add_new_parent_widget/static/src/css/add_new_parent_widget.css"/>
-        </xpath>
-    </template>
-</odoo>

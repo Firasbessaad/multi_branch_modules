@@ -1,4 +1,4 @@
-odoo.define('add_new_parent_widget.view', function(require) {
+odoo.define('add_new_parent_widget.action', function(require) {
     'use strict';
 
     var AbstractAction = require('web.AbstractAction');
@@ -6,7 +6,7 @@ odoo.define('add_new_parent_widget.view', function(require) {
 
     var BaseAction = AbstractAction.extend({
         hasControlPanel: false,
-        template: "add_new_parent_widget.ClientAction",
+        template: "ClientAction",
         events: {
             'click .add_new_parent': '_onClickAddRecord',
         },
@@ -18,16 +18,28 @@ odoo.define('add_new_parent_widget.view', function(require) {
             var name = $("input[name='name']").val();
             var family_name = $("input[name='family_name']").val();
             var mobile = $("input[name='mobile']").val();
-            data = {
-                'name': name,
-                'family_name': family_name,
+            console.log('clicked');
+            var data = {
+                'aicsk_first_name': name,
+                'aicsk_family_name': family_name,
+                'name':  name.concat(" ", family_name),
                 'mobile': mobile,
-            }
-            return this._rpc({
+            };
+            if (name.length > 0 && family_name.length > 0 && mobile.length > 0 ){
+            var parent =  this._rpc({
                 model: 'res.partner',
                 method: 'create',
                 args: [data],
             });
+            if (parent) {
+                this.trigger_up('show_effect', {
+                    message: 'WELCOME TO AICSK',
+                    type: 'rainbow_man',
+                });
+            }
+            location.reload();
+            }
+
         },
     });
 

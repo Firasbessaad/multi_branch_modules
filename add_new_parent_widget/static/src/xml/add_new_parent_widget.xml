@@ -1,57 +1,65 @@
 <!--?xml version="1.0" encoding="UTF-8"?-->
 <templates xml:space="preserve">
-  <div t-name="add_new_parent_widget.ClientAction" class="add-new-parent">
+  <div t-name="ClientAction" class="add-new-parent">
     <div class="container">
         <div class="row mt32">
-            <h1>Welcome to AICSK</h1>
+            <h1 class="text-center welcome_msg">Welcome to AICSK</h1>
         </div>
-        <img _ngcontent-serverapp-c85="" src="add_new_parent_widget/static/src/img/welcome.svg" alt="Welcome to AICSK" class="signup-form-img d-none d-md-block"></img>
-        <form>
-          <div class="form-group row">
-            <label for="name" class="col-3 col-form-label">Name</label> 
-            <div class="col-9">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fa fa-address-book"></i>
+        <div class="row mt32">
+            <div class="col-md-7">
+                <form>
+                  <div class="form-group row">
+                    <label for="name" class="col-4 col-form-label">Name</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-address-book"></i>
+                          </div>
+                        </div>
+                        <input id="name" name="name" type="text" class="form-control" required=""/>
+                      </div>
+                    </div>
                   </div>
-                </div> 
-                <input id="name" name="name" type="text" class="form-control"/>
-              </div>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="family_name" class="col-3 col-form-label">Family name</label> 
-            <div class="col-9">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fa fa-address-book"></i>
+                  <div class="form-group row">
+                    <label for="family_name" class="col-4 col-form-label">Family name</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-address-book"></i>
+                          </div>
+                        </div>
+                        <input id="family_name" name="family_name" type="text" class="form-control" required="" />
+                      </div>
+                    </div>
                   </div>
-                </div> 
-                <input id="family_name" name="family_name" type="text" class="form-control"/>
-              </div>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label for="mobile" class="col-3 col-form-label">Mobile</label> 
-            <div class="col-9">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fa fa-mobile"></i>
+                  <div class="form-group row">
+                    <label for="mobile" class="col-4 col-form-label">Mobile</label>
+                    <div class="col-8">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <i class="fa fa-phone"></i>
+                          </div>
+                        </div>
+                        <input id="mobile" name="mobile" type="tel" class="form-control" required="" placeholder="0796923358" pattern="[0][7][7,8,9][0-9]{7}"/>
+                      </div>
+                    </div>
                   </div>
-                </div> 
-                <input id="mobile" name="mobile" type="text" class="form-control"/>
-              </div>
+                  <div class="form-group row">
+                    <div class="offset-4 col-8">
+                      <button name="submit" type="submit" class="btn btn-primary add_new_parent btn-lg btn-block" style="background-color: #304c64 !important;font-size:25px">Submit</button>
+                    </div>
+                  </div>
+                </form>
+<!--                <img style="width:100%" _ngcontent-serverapp-c85="" src="add_new_parent_widget/static/src/img/welcome_back.png" alt="Welcome to AICSK" class="signup-form-img d-none d-md-block"></img>-->
+
             </div>
-          </div> 
-          <div class="form-group row">
-            <div class="offset-3 col-9">
-              <button name="submit" type="submit" class="btn btn-primary add_new_parent">Submit</button>
+            <div class="col-md-5" style="min-height:950px">
+<!--                <img style="width:100%" _ngcontent-serverapp-c85="" src="add_new_parent_widget/static/src/img/welcome.svg" alt="Welcome to AICSK" class="signup-form-img d-none d-md-block"></img>-->
             </div>
-          </div>
-        </form>
+        </div>
     </div>
   </div>
 </templates>
