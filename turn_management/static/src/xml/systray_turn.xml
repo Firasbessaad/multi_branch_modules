@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template">
+   <t t-name="systray_turn">
+       <li class="o_mail_navbar_item">
+           <a class="dropdown-toggle o-no-caret" data-toggle="dropdown" data-display="static" aria-expanded="false"
+              title="Trun" href="#" role="button">
+               <i id='turn_widget' class="fa fa-heartbeat" role="img" aria-label="Turn"/>
+           </a>
+           <ul class="o_mail_navbar_dropdown dropdown-menu dropdown-menu-right" role="menu">
+               <li class="o_mail_navbar_dropdown_top" style='height:55px;width:250px;'>
+                   <div class="container">
+                        <div class="alert alert-primary" role="alert">
+                            <span id="current_turn_info"/>
+                        </div>
+                   </div>
+               </li>
+           </ul>
+       </li>
+   </t>
+</templates>
