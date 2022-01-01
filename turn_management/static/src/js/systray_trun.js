@@ -18,7 +18,7 @@ odoo.define('turn_management.turn', function(require) {
                 })
                 .then(function(result) {
                     if (result) {
-                        self.$('#current_turn_info').val(result);
+                        self.$('#current_turn_info').text(result);
                     }
                 });
         },
