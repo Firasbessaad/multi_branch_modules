@@ -13,15 +13,16 @@
     'license': 'AGPL-3',
      'depends': [
         'base',
-        'web'
+        'web',
+        'mail'
     ],
     'data': [],
     'assets': {
         'web.assets_backend':[
-            'turn_management/static/src/js/systray_trun.js',
+            'turn_management/static/src/js/systray_turn.js',
         ],
         'web.assets_qweb': [
-            'turn_management/static/src/xml/systray_trun.xml',
+            'turn_management/static/src/xml/systray_turn.xml',
         ],
     },
     'demo': [],

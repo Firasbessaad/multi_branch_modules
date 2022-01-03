@@ -6,7 +6,7 @@
               title="Trun" href="#" role="button">
                <i id="turn_widget" class="fa fa-heartbeat" role="img" aria-label="Turn"/>
            </a>
-           <ul class="o_mail_navbar_dropdown dropdown-menu dropdown-menu-right" role="menu">
+           <ul id="ul_turn" class="o_mail_navbar_dropdown dropdown-menu dropdown-menu-right" role="menu">
                <li class="o_mail_navbar_dropdown_top" style='height:55px;width:250px;'>
                    <div class="container">
                         <div class="alert alert-primary" role="alert">

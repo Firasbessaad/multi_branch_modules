@@ -7,7 +7,14 @@ from odoo import models, fields, api, _
 class Partner(models.Model):
     _inherit = "res.partner"
 
-    branch_id = fields.Many2one("res.branch", string='Branch')
+    branch_id = fields.Many2one(
+        "res.branch",
+        string='Branch',
+        default=lambda self: self.env.user.branch_id
+    )
+    company_id = fields.Many2one(
+        default=lambda self: self.env.user.company_id
+    )
 
     @api.onchange('company_id')
     def _onchange_company_id(self):
