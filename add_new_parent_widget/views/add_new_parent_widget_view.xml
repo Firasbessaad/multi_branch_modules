@@ -7,7 +7,7 @@
       <field name="target">fullscreen</field>
     </record>
 
-    <menuitem name="Add new parent"
+    <menuitem name="New parent"
         id="menu_add_new_parent_widget_menu_root"
         action="action_add_new_parent_widget"
         sequence="90" groups="base.group_user"
