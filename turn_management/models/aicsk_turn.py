@@ -11,6 +11,13 @@ class AicskTurn(models.Model):
         comodel_name='res.partner',
         ondelete='restrict',
     )
+    aicsk_type = fields.Selection(
+        string='Visit Type',
+        selection=[('registration', 'Registration'),
+                   ('other', 'Other'), ]
+    )
+
+    aicsk_turn = fields.Char(default=lambda self: self.env['ir.sequence'].next_by_code('aicsk.visit'))
 
     @api.model
     def get_coming_turn(self):
